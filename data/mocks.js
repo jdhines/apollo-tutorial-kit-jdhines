@@ -4,6 +4,7 @@ const mocks = {
   String: () => 'It works!',
   Query: () => ({
     author: (root, args) => {
+      console.log('author query');
       return { firstName: args.firstName, lastName: args.lastName };
     },
   }),
